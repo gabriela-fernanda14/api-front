@@ -8,29 +8,38 @@ return (
         <div className={styles.footerContainer}>
             <div className={styles.footerGrid}>
                 <div className={styles.footerSection}>
-                    <h3>Meu Projeto</h3>
+                    <div className={styles.logoSection}>
+                        <span className={styles.globeIcon}>🌐</span>
+                        <h3>Países do Mundo</h3>
+                    </div>
                     <p>
                         Projeto de front-end API, compartilhando conhecimentos e experiências do curso de Desenvolvimento de Sistemas.
                     </p>
                 </div>
                 <div className={styles.footerSection}>
-                    <h3>Links Rápidos</h3>
-                    <ul className={styles.footerLinks}>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#posts">Posts</a></li>
-                    </ul>
-                </div>
-                <div className={styles.footerSection}>
-                    <h3>Contato</h3>
-                    <p>SESI & SENAI Valinhos</p>
-                    <p>Turma: 2TDS</p>
+                    <h3>Contato & Info</h3>
+                    <div className={styles.contactInfo}>
+                        <p>📍 SESI & SENAI Valinhos</p>
+                        <p>🎓 Turma: 2TDS</p>
+                        <p>👨‍💻 Desenvolvimento de Sistemas</p>
+                    </div>
                 </div>
             </div>
+            <div className={styles.footerDivider}></div>
             <div className={styles.footerBottom}>
-                <p>
-                    &copy; {new Date().getFullYear()}Gabriela Fernanda Barbosa. Todos os direitos reservados.
-                </p>
+                <div className={styles.footerBottomContent}>
+                    <div className={styles.copyright}>
+                        <p>&copy; {new Date().getFullYear()} Gabriela Fernanda Barbosa. Todos os direitos reservados.</p>
+                    </div>
+                    <div className={styles.socialLinks}>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
